@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<style>
+body{
+  text-align:center;
+  margin-top:50px;
+  font-family:Arial;
+}
+
+.btn-musica{
+  background:#D4AF37;
+  color:white;
+  border:none;
+  padding:15px 30px;
+  border-radius:25px;
+  font-size:18px;
+  cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<button class="btn-musica" onclick="togglePlay()">
+🎵 Escuchar Música
+</button>
+
+<audio id="miAudio">
+  "sonido.mpeg" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("miAudio");
+const boton = document.querySelector(".btn-musica");
+
+function togglePlay() {
+  if (audio.paused) {
+    audio.play();
+    boton.innerHTML = "⏸️ Pausar Música";
+  } else {
+    audio.pause();
+    boton.innerHTML = "🎵 Escuchar Música";
+  }
+}
+</script>
+
+</body>
+</html>
