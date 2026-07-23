@@ -1,0 +1,21 @@
+<div style="text-align: center; font-family: sans-serif; padding: 10px;">
+  <audio id="miAudio" src="https://githubusercontent.com"></audio>
+  <button id="btnPlayPause" onclick="togglePlay()" style="background-color: #4285f4; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">
+    ▶ Reproducir
+  </button>
+</div>
+
+<script>
+  const audio = document.getElementById("miAudio");
+  const btn = document.getElementById("btnPlayPause");
+
+  function togglePlay() {
+    if (audio.paused) {
+      audio.play();
+      btn.innerHTML = "⏸ Pausar";
+    } else {
+      audio.pause();
+      btn.innerHTML = "▶ Reproducir";
+    }
+  }
+</script>
