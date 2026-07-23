@@ -38,7 +38,7 @@ body{
 </head>
 
 <body>
-<button class="btn-musica">▶</button>
+<button class="btn-musica">▶q</button>
 
 <audio id="miAudio">
     <source src="sonido.mp3" type="audio/mpeg">
@@ -53,10 +53,10 @@ boton.addEventListener("click", togglePlay);
 function togglePlay() {
     if (audio.paused) {
         audio.play();
-        boton.textContent = "⏸";
+        boton.textContent = "⏸q";
     } else {
         audio.pause();
-        boton.textContent = "▶";
+        boton.textContent = "▶q";
     }
 }
 </script>
