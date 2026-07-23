@@ -31,7 +31,7 @@ body{
   cursor: pointer;
   margin-bottom: 20px;
 }
-▶*/
+▶♫*/
 .btn-musica:hover{
   color: #59450b;
 }
@@ -43,7 +43,7 @@ body{
 </head>
 
 <body>
-<button class="btn-musica" onclick="Reproduce()">♫</button>
+<button class="btn-musica" onclick="Reproduce()">🎵</button>
 
 <audio id="miAudio">
     <source src="sonido.mpeg" type="audio/mpeg">
@@ -61,7 +61,7 @@ function Reproduce() {
         boton.textContent = "⏸";
     } else {
         audio.pause();
-        boton.textContent = "▶";
+        boton.textContent = "🎵";
     }
 }
 </script>
