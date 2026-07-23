@@ -39,10 +39,10 @@ body{
 </head>
 
 <body>
-
-<button class="btn-musica" onclick="togglePlay()">
+<button class="btn-musica">▶</button>
+<!--<button class="btn-musica" onclick="togglePlay()">
 🎵 Escuchar Música
-</button>
+</button>-->
 
 <audio id="miAudio">
   <source src="sonido.mpeg" type="audio/mpeg">
@@ -58,7 +58,7 @@ function togglePlay() {
     boton.innerHTML = "⏸️ Música";
   } else {
     audio.pause();
-    boton.innerHTML = "🎵 Música";
+    boton.innerHTML = "▶ Música";
   }
 }
 </script>
