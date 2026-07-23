@@ -13,7 +13,7 @@ body{
   background: transparent;
   border: none;
   color: #D4AF37; /* Color del ícono */
-  font-size: 24px;
+  font-size: 35px;
   padding: 0;
   cursor: pointer;
   display: inline-flex;
@@ -38,7 +38,7 @@ body{
 </head>
 
 <body>
-<button class="btn-musica" onclick="togglePlay()">▶</button>
+<button class="btn-musica" onclick="Reproduce()">▶</button>
 
 <audio id="miAudio">
     <source src="sonido.mpeg" type="audio/mpeg">
@@ -50,7 +50,7 @@ const boton = document.querySelector(".btn-musica");
 
 //boton.addEventListener("click", togglePlay);
 
-function togglePlay() {
+function Reproduce() {
     if (audio.paused) {
         audio.play();
         boton.textContent = "⏸";
