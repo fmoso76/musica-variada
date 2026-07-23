@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -40,9 +39,30 @@ body{
 
 <body>
 <button class="btn-musica">▶</button>
+
+<audio id="miAudio">
+    <source src="sonido.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const audio = document.getElementById("miAudio");
+const boton = document.querySelector(".btn-musica");
+
+boton.addEventListener("click", togglePlay);
+
+function togglePlay() {
+    if (audio.paused) {
+        audio.play();
+        boton.textContent = "⏸";
+    } else {
+        audio.pause();
+        boton.textContent = "▶";
+    }
+}
+</script>
 <!--<button class="btn-musica" onclick="togglePlay()">
 🎵 Escuchar Música
-</button>-->
+</button>
 
 <audio id="miAudio">
   <source src="sonido.mpeg" type="audio/mpeg">
@@ -61,7 +81,7 @@ function togglePlay() {
     boton.innerHTML = "▶ Música";
   }
 }
-</script>
+</script>-->
 
 </body>
 </html>
