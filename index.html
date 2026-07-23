@@ -43,7 +43,7 @@ body{
 </head>
 
 <body>
-<button class="btn-musica" onclick="Reproduce()">🎵</button>
+<button class="btn-musica" onclick="Reproduce()">"🎵FF"</button>
 
 <audio id="miAudio">
     <source src="sonido.mpeg" type="audio/mpeg">
@@ -58,10 +58,10 @@ const boton = document.querySelector(".btn-musica");
 function Reproduce() {
     if (audio.paused) {
         audio.play();
-        boton.textContent = "⏸";
+        boton.textContent = "⏸FF";
     } else {
         audio.pause();
-        boton.textContent = "🎵";
+        boton.textContent = "🎵GG";
     }
 }
 </script>
